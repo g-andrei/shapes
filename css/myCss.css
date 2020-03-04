@@ -1,0 +1,182 @@
+body {
+    background-color: #003049;
+}
+
+.center-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+h1 {
+    color: #B02121;
+}
+
+
+/* ########### Nav Bar ############# */ 
+
+.nav-bar {
+    width: 100%;
+    background-color: #EAE2B7;
+}
+
+.btn {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 15px 0;    
+}
+
+.btn a {
+    font-size: 20px;
+    margin: 30px;
+    color: #F77F00;
+    text-transform: uppercase;
+}
+
+form label {
+    font-size: 20px;
+    color: #F77F00;
+    text-transform: uppercase;
+}
+
+/* ###### D E S C R I P T I O N ###### */
+
+.description {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #F77F00;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2;
+}
+
+/* ##### I P U T ##### */
+
+form {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 16%;
+}
+
+form label {
+    font-size: 20px;
+    color: #F77F00;
+    text-transform: uppercase;
+}
+
+.inputField {
+    display: block;
+    margin: 10px auto;
+    width: 210px;
+    height: 25px;
+    color: #013049;
+    font-size: 16px;
+    border: 0;
+    padding: 5px 0 5px 10px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #013049;
+    opacity: 70%;
+}
+
+.inputBtn {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#output {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #F77F00;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ######### S Q U A R E ######### */
+
+#squareShape {
+    display: none;
+}
+
+.square-shape {
+    width: 400px;
+    height: 400px;
+    margin: 80px auto 0 auto;
+    background-color: #F2B846;
+    display: block;
+}
+
+
+/* ######### C I R C L E ######### */
+
+#circleShape {
+    display: none;
+}
+
+.circle-shape {
+    width: 400px;
+    height: 400px;
+    margin: 80px auto 0 auto;
+    border-radius: 50%;
+    background-color: #F2B846;
+    
+}
+
+/* ######### T R I A N G L E ######### */
+
+#triangleShape {
+    display: none;
+}
+
+.triangle-shape {
+    width: 0;
+    height: 0;
+    margin: 80px auto 0 auto;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 400px solid #F2B846;
+}
+
+/* ######### H E A R T ######### */
+
+#heartShape {
+    display: none;
+}
+
+.heart {
+    background-color: #F2B846;
+    height: 220px;
+    margin: 130px auto;
+    transform: rotate(-45deg);
+    width: 220px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: #F2B846;
+    border-radius: 50%;
+    height: 220px;
+    position: absolute;
+    width: 220px;
+  }
+  
+  .heart:before {
+    top: -110px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 110px;
+    top: 0;
+  }

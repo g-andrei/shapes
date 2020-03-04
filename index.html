@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>S H A P E S</title>
+    <link rel="stylesheet" href="css/defCss.css">
+    <link rel="stylesheet" href="css/myCss.css">
+
+    <script src="js/functions.js"></script>
+</head>
+
+<!-- ######  square circle triangle heart  ######-->
+
+<body>
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="btn">
+                        <li>
+                            <a href="#" id="squareBtn" onclick="squareFunction()" >square</a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="circleBtn" onclick="circleFunction()" >circle</a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="triangleBtn" onclick="triangleFunction()" >triangle</a>
+                        </li>
+
+                        <li>
+                            <a href="#" id="heartBtn" onclick="heartFunction()" >heart</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sphapes">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="description">
+                        You have two ways to generate geometric figures. <br>
+                        1. By pressing the buttons above. <br>
+                        2. Entering the number of corners of the figurine <br>
+                        2 for the heart | 3 for the triangle | 4 for the square | 0 for the circle
+                    </p>                
+                </div>
+            </div>
+
+            <!-- ##### I N P U T #### -->
+            <div class="row">
+                <div class="col-12">
+                    <form autocomplete="off">
+                        <label for="numberOfCorners">Number of corners: </label> <br>
+                        <input type="text" class="inputField" id="numberOfCorners" onfocus="this.value=''" placeholder="Enter the number of corners..."> <br>
+                        <input type="submit" class="inputBtn" value="Submit" onclick="inputValue()">
+                    </form>
+
+                    <p id="output"></p>
+                </div>
+            </div> 
+
+            <!-- ##### S Q U A R E #####-->
+
+            <div class="row" id="squareShape">
+                <div class="col-6 center-text">
+                    <h1 id="green-square">This is a square.</h1>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="square-shape"></div>
+
+                </div>
+            </div>
+
+            <!-- ##### C I R C L E #####-->
+
+            <div class="row"  id="circleShape">
+                <div class="col-6 center-text">
+                    <h1 id="green-circle">This is a circle.</h1>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="circle-shape"></div>
+
+                </div>
+            </div>
+
+            <!-- ##### T R I A N G L E #####-->
+
+            <div class="row"  id="triangleShape">
+                <div class="col-6 center-text">
+                    <h1 id="gree-triangle">This is a triangle.</h1>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="triangle-shape"></div>
+
+                </div>
+            </div>
+
+            <!-- ##### H E A R T #####-->
+
+            <div class="row"  id="heartShape">
+                <div class="col-6 center-text">
+                    <h1 id="green-heart" >This is a heart.</h1>
+                </div>
+
+                <div class="col-6 d-flex">
+                    
+                        <div class="heart"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
